@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(239, 239, 239);
+  position: relative;
+  z-index: -2;
+}
+/* body::before {
+  content: "";
+  background-color: #e8e8e8;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  display: block;
+  z-index: -2;
+} */
+
+header {
+  width: 100%;
+  height: 20px;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  height: 55px;
+  width: -webkit-fill-available;
+  display: flex;
+  padding: 8px 0;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 0.5px 3px #bababa;
+}
+
+.logo-container {
+  display: flex;
+  padding-left: 15px;
+}
+.fa-brands {
+  font-size: 2.5rem;
+  margin-right: 8px;
+}
+
+.icon-bg {
+  width: 2.5rem;
+  background-color: rgba(105, 105, 105, 0.125);
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.fa-magnifying-glass {
+  font-size: 0.9rem;
+  margin: 12px;
+}
+
+.right-bar {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  height: 50px;
+  padding-right: 10px;
+}
+.fa-plus,
+.fa-facebook-messenger,
+.fa-bell {
+  font-size: 1.1rem;
+  margin: 12px;
+}
+
+/* main {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.S-R-container {
+  min-width: 280px;
+  max-width: 500px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  z-index: -21;
+  position: relative;
+  margin: 3.8rem auto 2rem;
+}
+.stories-reels {
+  min-width: 280px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
+  box-shadow: 0px 0.5px 3px #bababa;
+}
+
+.stories-container,
+.reels-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.reels-container {
+  margin-right: 10px;
+}
+.stories-container {
+  margin-left: 10px;
+}
+
+.stories-container:hover,
+.reels-container:hover {
+  border-bottom: 3.5px solid #1877f2;
+}
+
+.stories,
+.reels {
+  font: 15px Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+  color: #65676b;
+  letter-spacing: 0.5px;
+}
+
+.stories:hover,
+.reels:hover {
+  color: #1877f2;
+}
